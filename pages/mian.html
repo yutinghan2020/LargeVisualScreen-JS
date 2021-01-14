@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>大数据可视化</title>
+	<link rel="stylesheet" href="../CSS/Reset.css">
+	<link rel="stylesheet" href="../CSS/main.css">
+	<script src="../assembly/echarts/dist/echarts.min1.js"></script>
+	<script src="../assembly/echarts/dist/echarts-liquidfill.min.js"></script>
+	<script src="../JavaScript/util.js"></script>
+</head>
+<body>
+	<div class="main-content">
+		<div class="main-content-top result-top">
+			<div class="tianqi-box">
+				<iframe id="fancybox-frame" name="fancybox-frame1586309889044" height="25" frameborder="0" scrolling="no" hspace="0"  src="http://i.tianqi.com/index.php?c=code&a=getcode&id=34&site=16&color=%23FFFFFF&h=25&w=300&icon=3"></iframe>
+			</div>
+			
+			<img src="../images/titilebg.png" alt="" height="112px" width="100%">
+			<div class="title">
+				企业年度数据驾驶舱平台
+			</div>
+
+			<div class="full-box">
+				<p class="result-top" id="out"  onclick="exitFullscreen()" style="display: none;">
+					<img height="24px" src="../images/outFull.png" alt="">
+					<span>退出</span>
+				</p>
+				<p class="result-top" id="full" onclick="fullScreen()">
+					<img height="24px" src="../images/full.png" alt="">
+					<span>全屏</span>
+				</p>
+			</div>
+		</div>
+		<div class="main-content-bottom result-bottom">
+			<div class="content-list result">
+				<div class="module-list-2 position-relative">
+					<div class="subtitle">
+						<p>月度销售排行</p>
+					</div>
+					<div class="module-content result-bottom" style="flex-wrap:wrap;">
+						<div id="chart-l1-1" class="wh100"></div>
+					</div>
+				</div>
+				<div class="module-list-2 position-relative">
+					<div class="subtitle">
+						<p>商品销售分布</p>
+					</div>
+					<div class="module-content">
+						<div id="chart-l2" class="wh100"></div>
+					</div>
+				</div>
+			</div>
+			<div class="content-list-2 result">
+				<div class="module-list-4 position-relative result-top">
+					<video autoplay="autoplay" class="video" muted="muted" loop width="100%" height="100%">
+						<source src="../video/map_bt1.mp4" type="video/mp4"/>
+						您的浏览器不支持视频插件 
+					</video>
+
+					<div id="animation-img" class="module-center-img result-column animation-img" onmouseover="over()" onmouseout="out()">
+						<div class="module-KPI result-bottom">
+							<div class="module-KPI-list KPI-t1 result-bottom">
+								<div class="KPI-img" style="background-image: url(../images/营业收入.png)">
+								</div>
+								<div class="KPI-text">
+									<p class="KPI-text-num">8513212.56</p>
+									<p class="KPI-text-titel">营业收入</p>
+								</div>
+							</div>
+							<div class="module-KPI-list KPI-t2 result-bottom">
+								<div class="KPI-text">
+									<p class="KPI-text-num">1251253</p>
+									<p class="KPI-text-titel">成本</p>
+								</div>
+								<div class="KPI-img" style="background-image: url(../images/成本.png)">	
+								</div>
+							</div>
+						</div>
+						<div class="module-KPI result-bottom">
+							<div class="module-KPI-list KPI-C1 result-bottom">
+								<div class="KPI-img" style="background-image: url(../images/净利润额.png)"></div>
+								<div class="KPI-text">
+									<p class="KPI-text-num">8542251.35</p>
+									<p class="KPI-text-titel">净利润</p>
+								</div>
+							</div>
+							<div class="module-KPI-list KPI-C2 result-bottom">
+								<div class="KPI-text">
+									<p class="KPI-text-num">5412652.95</p>
+									<p class="KPI-text-titel">毛利</p>
+								</div>
+								<div class="KPI-img" style="background-image: url(../images/年度毛利.png)"></div>
+							</div>
+						</div>
+						<div class="module-KPI result-bottom">
+							<div class="module-KPI-list KPI-t1 result-bottom">
+								<div class="KPI-img" style="background-image: url(../images/费用.png)"></div>
+								<div class="KPI-text">
+									<p class="KPI-text-num">652125.65</p>
+									<p class="KPI-text-titel">期间费用</p>
+								</div>
+							</div>
+							<div class="module-KPI-list KPI-t2 result-bottom">
+								<div class="KPI-text">
+									<p class="KPI-text-num">94125143.98</p>
+									<p class="KPI-text-titel">应收账款</p>
+								</div>
+								<div class="KPI-img" style="background-image: url(../images/应收单.png)"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="module-list-3 position-relative">
+					<div class="subtitle">
+						<p>主营业务情况</p>
+					</div>
+					<div class="module-content">
+						<div id="chart-c2" class="wh100"></div>
+					</div>
+				</div>
+			</div>
+			<div class="content-list result">
+				<div class="module-list-3 position-relative">
+					<div class="subtitle">
+						<p>支出费用构成</p>
+					</div>
+					<div class="module-content  result-bottom">
+						<div class="chart-r1-list">
+							<div id="chart-r1-1" class="wh100"></div>
+						</div>
+						<div class="chart-r1-list">
+							<div id="chart-r1-2" class="wh100"></div>
+						</div>
+						<div class="chart-r1-list">
+							<div id="chart-r1-3" class="wh100"></div>
+						</div>
+					</div>
+				</div>
+				<div class="module-list-3 position-relative">
+					<div class="subtitle">
+						<p>客户生命周期情况</p>
+					</div>
+					<div class="module-content">
+						<div id="chart-r2" class="wh100"></div>
+					</div>
+				</div>
+				<div class="module-list-3 position-relative">
+					<div class="subtitle">
+						<p>模块图标标题</p>
+					</div>
+					<div class="module-content result-bottom overflow-hidden">
+						<div id="chart-r3" class="wh100"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+	<script src="../assembly/echarts/tooltip.js"></script>
+	<script src="../JavaScript/ChartR1.js"></script>
+	<script src="../JavaScript/ChartR2.js"></script>
+	<script src="../JavaScript/ChartR3.js"></script>
+	<script src="../JavaScript/ChartC2.js"></script>
+	<script src="../JavaScript/ChartL2.js"></script>
+	<script src="../JavaScript/ChartL1-1.js"></script>
+	<script>
+		(function(){
+			window.over= function (){
+				let dom=document.getElementById("animation-img");
+				if(dom.className.indexOf("animation-img")!=-1){
+					dom.classList.remove("animation-img");
+				}
+			};
+			window.out=function (){
+				let dom=document.getElementById("animation-img");
+				if(dom.className.indexOf("animation-img") === -1 ){
+					dom.classList.add("animation-img");
+				}
+			};
+			let ChartC2=initChartC2();
+			let ChartR2=initChartR2();
+			let ChartR3=initChartR3();
+			let ChartL2=initChartL2();
+			let ChartL11=initChartL11();
+			let  ChartR11=initChartR11();
+			let  ChartR12=initChartR12();
+			let  ChartR13=initChartR13()
+			window.onresize = function () {
+				ChartC2.resize();
+				ChartR2.resize();
+				ChartR3.resize();
+				ChartL2.resize();
+				ChartL11.resize();
+				ChartR11.resize();
+				ChartR12.resize();
+				ChartR13.resize();
+				var isFull=!!(document.webkitIsFullScreen || document.mozFullScreen || 
+			        document.msFullscreenElement || document.fullscreenElement
+			    );//!document.webkitIsFullScreen都为true。因此用!!
+				if (isFull==false) {
+			        document.getElementById('out').style.display="none";
+			        document.getElementById('full').style.display="";
+			    }else{
+			    	document.getElementById('out').style.display="";
+			        document.getElementById('full').style.display="none";
+			    }
+		    }
+		})();
+		//fullScreen()和exitScreen()有多种实现方式，此处只使用了其中一种
+		//全屏
+		function fullScreen() {
+		    var element = document.documentElement;
+		    if (element.requestFullscreen) {
+		        element.requestFullscreen();
+		    } else if (element.msRequestFullscreen) {
+		        element.msRequestFullscreen();
+		    } else if (element.mozRequestFullScreen) {
+		        element.mozRequestFullScreen();
+		    } else if (element.webkitRequestFullscreen) {
+		        element.webkitRequestFullscreen();
+		    }
+		}
+
+		//退出全屏 
+		function exitFullscreen() {
+		    if (document.exitFullscreen) {
+		        document.exitFullscreen();
+		    } else if (document.msExitFullscreen) {
+		        document.msExitFullscreen();
+		    } else if (document.mozCancelFullScreen) {
+		        document.mozCancelFullScreen();
+		    } else if (document.webkitExitFullscreen) {
+		        document.webkitExitFullscreen();
+		    }
+		}
+	</script>
+</html>

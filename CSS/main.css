@@ -1,0 +1,305 @@
+
+.main-content{
+	background-color: #000c31/*#020e33;*/
+	/* background-image: url(../images/background.png); */
+}
+.main-content-top{
+	width: 100%;
+	height: 115px;
+	position: relative;
+	z-index: 1;
+}
+.main-content-bottom{
+	padding: 0 20px 20px 20px;
+	position: absolute;
+	top: 120px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.main-content-top > img{
+	position: absolute;
+}
+
+.content-list{
+	width:28%;
+	height: 100%;
+}
+.result{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /* 轴方向 */
+    -ms-flex-direction:column;
+    -webkit-box-orient:vertical;
+    -webkit-flex-direction:column;
+    flex-direction:column;
+    /* 主轴对齐 */
+    -ms-flex-pack:justify;
+    -webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
+    justify-content:space-between;
+    /* 侧轴对齐 */
+    -ms-flex-align:center;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    align-items:center;
+}
+.result-column{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /* 轴方向 */
+    -ms-flex-direction:column;
+    -webkit-box-orient:vertical;
+    -webkit-flex-direction:column;
+    flex-direction:column;
+    /* 主轴对齐 */
+    -ms-flex-pack:justify;
+    -webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
+    justify-content:space-between;
+}
+.module-list-2{
+	width:100%;
+	height: 48.5%;
+	/* background-color: #fc0; */
+}
+.module-list-3{
+	width:100%;
+	height: 31.5%;
+}
+.module-list-4{
+	width:100%;
+	height: 65.5%;
+}
+.content-list-2{
+	width:41%;
+	height: 100%;
+}
+.tianqi-box{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+.full-box{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color:#009fe8;
+	font-weight: 700;
+	cursor: pointer;
+}
+.full-box > p{
+	line-height: 24px;
+}
+.full-box > p >img{
+	margin-right: 5px;
+}
+.title{
+	width:25%;
+	height: 56px;
+	position: inherit;
+	margin-bottom: 14px;
+	overflow: hidden;
+	color: #37E9F7;
+	text-align: center;
+	line-height: 56px;
+	font-size: 32px;
+}
+.subtitle{
+	width:100%;
+	height: 26px;
+	position: absolute;
+	top: 0;
+	background-image: url(../images/wtitlebg.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: 100% 100%;	
+}
+.subtitle > p{
+	color:#37E9F7;
+	line-height: 26px; 
+	font-size:22px;
+	position: absolute;
+	top: -10px;
+	overflow: hidden;
+}
+.module-content{
+	width:100%;
+	position: absolute;
+	top:26px;
+	bottom: 0;
+	background-color: rgb(255 255 255 / 5%); 
+}
+.chart-r1-list{
+	height: 100%;
+	width:33%;
+}
+.result-top{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /* 主轴对齐 */
+    -ms-flex-pack:center;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+    /* 侧轴对齐 */
+    -ms-flex-align:end;
+    -webkit-box-align:end;
+    -webkit-align-items:flex-end;
+    align-items:flex-end;
+}
+.result-bottom{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /* 主轴对齐 */
+    -ms-flex-pack:justify;
+    -webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
+    justify-content:space-between;
+    /* 侧轴对齐 */
+    -ms-flex-align:center;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    align-items:center;
+}
+.video{
+	position: absolute;
+	bottom: 0;
+}
+.module-center-img{
+	height: 60%;
+    width: 60%;
+	position: absolute;
+	bottom:30%;
+	border-radius: 50%;
+	background-image: url(../images/middle_27.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	/* -moz-box-shadow:0 0 60px 8px #11366d; 老的 Firefox
+	box-shadow: 0 0 60px 8px #11366d; */
+}
+.animation-img{
+	animation:myAnimation 2s infinite linear;
+	-moz-animation:myAnimation 2s infinite linear; Firefox
+	-webkit-animation:myAnimation 2s infinite linear; Safari and Chrome
+	-o-animation:myAnimation 2s infinite linear;
+}
+@keyframes myAnimation
+{
+	0%   {bottom:30%;}
+	12%  {bottom:31%;}
+	25%  {bottom:32%;}
+	37%  {bottom:31%;}
+	50%  {bottom:30%;}
+	62%  {bottom:29%;}
+	75%  {bottom:28%;}
+	87%  {bottom:29%;}
+	100% {bottom:30%;}
+}
+
+@-moz-keyframes myAnimation /* Firefox */
+{
+	0%   {bottom:30%;}
+	12%  {bottom:31%;}
+	25%  {bottom:32%;}
+	37%  {bottom:31%;}
+	50%  {bottom:30%;}
+	62%  {bottom:29%;}
+	75%  {bottom:28%;}
+	87%  {bottom:29%;}
+	100% {bottom:30%;}
+}
+
+@-webkit-keyframes myAnimation /* Safari and Chrome */
+{
+	0%   {bottom:30%;}
+	12%  {bottom:31%;}
+	25%  {bottom:32%;}
+	37%  {bottom:31%;}
+	50%  {bottom:30%;}
+	62%  {bottom:29%;}
+	75%  {bottom:28%;}
+	87%  {bottom:29%;}
+	100% {bottom:30%;}
+}
+
+@-o-keyframes myAnimation /* Opera */
+{
+	0%   {bottom:30%;}
+	12%  {bottom:31%;}
+	25%  {bottom:32%;}
+	37%  {bottom:31%;}
+	50%  {bottom:30%;}
+	62%  {bottom:29%;}
+	75%  {bottom:28%;}
+	87%  {bottom:29%;}
+	100% {bottom:30%;}
+}
+
+.module-KPI{
+	width:100%;
+	height: 60px;
+	position: relative;
+}
+
+.module-KPI-list{
+	width:200px;
+	height: 60px;
+	position: absolute;
+}
+.KPI-t1{
+	left: -105px;
+}
+.KPI-t2{
+	right: -105px
+}
+.KPI-C1{
+	left: -150px;
+}
+.KPI-C2{
+	right: -150px;
+}
+.KPI-img{
+	width:45px;
+	height: 60px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.KPI-text{
+	width:150px;
+	height: 60px;
+}
+.KPI-text > .KPI-text-num{
+	width:100%;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	color: #7cda00;
+	font-size:24px;
+	border-bottom: 1px solid #c9f7fe;
+}
+.KPI-text > .KPI-text-titel{
+	width:100%;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #c9f7fe;
+}
+.chart-r1-conten{
+	width:100%;
+	height: 100%;
+}
+.ring-list{
+	width:50%;
+	height: 50%;
+}
