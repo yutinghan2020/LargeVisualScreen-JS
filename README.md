@@ -1,0 +1,2 @@
+# LargeVisualScreen-JS
+基于JavaScript、百度ECharts图表插件制作的可视化大屏，带有自动轮播效果功能
