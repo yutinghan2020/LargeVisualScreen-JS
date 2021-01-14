@@ -1,7 +1,6 @@
 ## 基于JavaScript、ECharts的可视化大屏
-基于JavaScript、百度ECharts图表插件制作的可视化大屏，带有自动轮播效果功能。效果如下。
+基于JavaScript、百度ECharts图表插件制作的可视化大屏，带有自动轮播效果功能。
 
-![6287e328afee1607358c05afb5a9531e.png](en-resource://database/503:1)
 
 * * *
 #### git地址
@@ -56,14 +55,7 @@
     }
 
 * * *
-#### 效果
-
-![330539e235dee060fbab8d8b93bb800d.png](en-resource://database/505:1)
-![f171aa792ec1f8c371df9f83d71d260e.png](en-resource://database/507:1)
-![53fb520bd467da9a16400721faa6fbe2.png](en-resource://database/509:1)
-
 
 注意：ECharts的水球图需要单独引入水球图组件（echarts-liquidfill.min.js）
-![e45e62db7cab61ec99bd74aebc9d668f.png](en-resource://database/511:1)
 
 **如有不同可以相互交流。**
